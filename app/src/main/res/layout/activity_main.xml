@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lishu.mydraglayout.MyDragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/draglayout"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.lishu.mydraglayout.MainActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_lift"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/head" />
+
+        <ListView
+            android:id="@+id/lv_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/layout_main"
+        android:background="#FF0000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#188df2">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/head" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</com.lishu.mydraglayout.MyDragLayout>
